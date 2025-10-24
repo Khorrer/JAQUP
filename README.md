@@ -20,3 +20,42 @@ Automatisiertes Test- und Code-Qualitäts-System für Java mit:
 ## 🚀 Lokales Setup
 
 ### 1️⃣ SonarQube starten
+
+➡️ UI unter: http://localhost:9000  
+Login (Standard): `admin / admin`
+
+### 2️⃣ Java Build & Tests
+
+
+---
+
+## 🔍 CI/CD Pipeline
+
+Das Repository enthält eine GitHub Actions Workflow-Datei:
+
+**.github/workflows/ci.yml**
+- Checkout Code
+- Maven Build
+- Automatisierte Tests
+- SonarQube Scan
+- Docker Build
+
+SonarQube Token muss in GitHub gespeichert werden:
+
+> `Settings` → `Secrets and variables` → `Actions`  
+> → **SONAR_TOKEN**
+
+---
+
+## 🎯 Roadmap
+- ✅ CI-Pipeline
+- ✅ Docker + SonarQube
+- ⬜ Test Coverage mit JaCoCo
+- ⬜ Deployment-Optionen
+- ⬜ Security-Scanning
+
+---
+
+## 📄 Lizenz
+Siehe Datei **LICENSE**
+
